@@ -1,0 +1,19 @@
+<p>categories works!</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>ver bebidas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let category of categories; index as i">
+            <td>{{i+1}}</td>
+            <td>{{category.strCategory}}</td>
+            <td><button class="btn btn-primary" (click)="goDrinks(category.strCategory)">ver bebidas</button></td>
+        </tr>
+    </tbody>
+
+</table>

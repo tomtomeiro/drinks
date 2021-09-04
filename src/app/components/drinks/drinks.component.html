@@ -1,0 +1,18 @@
+<p>drinks works!</p>
+<h2>{{tipo}}</h2>
+
+<div class="row">
+    <div class="col-md-4" *ngFor="let dnk of drinks;">
+        <div class="card" style="width: 18rem; margin-top: 10px;">
+            <img [src]="dnk.strDrinkThumb" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{dnk.strDrink}}</h5>
+                <a  class="btn btn-primary"  (click)="goDetail(dnk.idDrink)">Detalles</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    {{error}}
+</div>
